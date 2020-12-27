@@ -1,0 +1,42 @@
+<html>
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <body>
+        <div class="container">
+
+
+            <div class="container">
+                <h2><%= title %></h2>
+
+           <a href="/reg"  class="btn btn-sm btn-primary">Add User</a></br></br>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th> 
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                    <% users.forEach(function(user)
+                    {%>
+                        <tr>  <td><%= user.id %></td>
+                            <td><%= user.name %></td> 
+                            <td><%= user.email %></td>
+                            <td><%= user.password  %></td>
+                            <td>
+                                <a href="edit/<%= user.id %>" class="btn btn-sm btn-primary">Edit</a>
+                                <a href="delete/<%= user.id %> " class="btn btn-sm btn-primary">Delete</a>
+                            </td>
+                        </tr>
+                <%}); %>
+               </tbody>
+            </table>
+
+
+        </div>
+    </body>
+</html>

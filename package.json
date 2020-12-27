@@ -1,0 +1,24 @@
+{
+  "name": "mongo_login_reg",
+  "version": "1.0.0",
+  "description": "login and regiter with mongodb",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "mongodb": "^3.6.0",
+    "mongoose": "^5.9.27",
+    "mongoose-paginate-v2": "^1.3.10",
+    "node": "^14.7.0",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rajendra",
+  "license": "ISC"
+}
